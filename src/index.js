@@ -20,8 +20,8 @@ async function onFormSubmit(e) {
   e.preventDefault();
   resetCardsGallery();
   resetPage();
-  console.log(e.currentTarget)
-  searchText = e.currentTarget.searchQuery.value.trim();
+  searchText = form.elements.searchQuery.value.trim();
+  console.log(searchText)
   const { hits } = await fetchImages(searchText);
   e.target.reset();
   if (hits.length === 0) {
