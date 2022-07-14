@@ -10,7 +10,7 @@ import { resetPage } from '../js/fetchImages';
 
 const form = document.querySelector('.search-form');
 const gallery = document.querySelector('.gallery');
-const btn = document.querySelector('.load-more')
+const btn = document.querySelector('.load-more-btn')
 
 form.addEventListener('submit', onFormSubmit);
 btn.addEventListener('click', onLoadMoreBtnClick);
