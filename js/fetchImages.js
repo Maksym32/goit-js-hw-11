@@ -3,12 +3,12 @@ axios.defaults.baseURL = 'https://pixabay.com/api/';
 
 let page = 1;
 
-export async function fetchImages(query) {
+export async function fetchImages(searchText) {
 
   const optionParams = new URLSearchParams(
     {
       key: '28406971-da9ac527785fed0c52df2227a',
-      q: query,
+      q: searchText,
       image_type: 'photo',
       orientation: 'horizontal',
       safesearch: true,

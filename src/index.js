@@ -15,7 +15,6 @@ const btn = document.querySelector('.load-more-btn')
 form.addEventListener('submit', onFormSubmit);
 btn.addEventListener('click', onLoadMoreBtnClick);
 btn.classList.add('is-hidden');
-searchText = '';
 
 async function onFormSubmit(e) {
   e.preventDefault();
